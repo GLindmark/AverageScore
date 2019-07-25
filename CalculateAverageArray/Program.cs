@@ -20,12 +20,15 @@ namespace CalculateAverageArray {
 
             int avg = 0;
             int index = 0;
-            while (index < 12) {
+            while (index < 11) 
+                {
 
-                avg = 
+                avg = avg + scores[index];
+                index = index + 1;
+
             }
 
-            Console.WriteLine($"The Average i {avg} %")
+            Console.WriteLine($"The Average is {avg} %");
 
         }
     }
