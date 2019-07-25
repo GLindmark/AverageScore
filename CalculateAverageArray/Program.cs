@@ -3,7 +3,7 @@
 namespace CalculateAverageArray {
     class Program {
         static void Main(string[] args) {
-            int[] scores = new int[12];
+            int[] scores = new int[12];// in the 'new int [12]' the 12 represents the count of items
             //71    78    89    73    68    73    96    71    72    65    87    63
             scores[0] = 71;
             scores[1] = 78;
@@ -18,17 +18,18 @@ namespace CalculateAverageArray {
             scores[10] = 87;
             scores[11] = 63;
 
-            int avg = 0;
             int index = 0;
+            int total = 0;
             while (index < 12) 
                 {
 
-                avg = avg + scores[index];
+                total = total + scores[index];
                 index = index + 1;
 
             }
+            double average = total / 12.0;  //to get the decimal use 'double' and make '12', '12.0'
 
-            Console.WriteLine($"The Average is {avg} %");
+            Console.WriteLine($"The Average is: {average}%");
 
         }
     }
